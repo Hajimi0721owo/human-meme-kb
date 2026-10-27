@@ -97,6 +97,6 @@ python3 tools/check_meme.py memes/梗名.md
 
 ## 致谢与许可
 
-- AI 娘角色原案来自 B 站画师 [@ZipZipPipe](https://space.bilibili.com/4168597)（草履虫没有记忆），角色与设定归原作者所有。
+- AI 娘角色原案来自 B 站画师 [@ZipZipPipe](https://space.bilibili.com/4168597)，角色与设定归原作者所有。
 - 每一位投喂者都记在 [CONTRIBUTORS.md](CONTRIBUTORS.md)。
 - 本仓库的文字内容以 [CC BY-NC-SA 4.0](LICENSE) 共享：转载请署名、非商业、相同方式共享。第三方作品与商标说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
