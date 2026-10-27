@@ -1,0 +1,16 @@
+name: 梗条目格式检查
+on:
+  pull_request:
+    paths: ['memes/**', 'tools/check_meme.py']
+  push:
+    branches: [main]
+    paths: ['memes/**', 'tools/check_meme.py']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/check_meme.py

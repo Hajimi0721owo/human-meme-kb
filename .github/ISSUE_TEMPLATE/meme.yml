@@ -1,0 +1,68 @@
+name: 投喂一个梗
+description: 不会提 PR 也没关系，填这张表，维护者会帮你整理进 memes/
+title: "投喂：梗名"
+labels: ["投喂"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        三样东西：**梗 / 出处 / 怎么接**。收录后会在条目里署上你填的昵称。
+        用 AI agent 的话，直接说"帮我把这个梗投喂到 Hajimi0721owo/human-meme-kb"，它会按仓库里的 AGENTS.md 自己提交。
+  - type: input
+    id: name
+    attributes:
+      label: 梗
+      placeholder: 例如：断不了情根
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 出处
+      description: 最早从哪来的（平台 / 作品 / 事件），有链接更好
+      placeholder: 例如：抖音 AI 视频模板
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类
+      options: [AI圈日常, 风控博弈, 全网名场面, 二次元, 程序员黑话, 其他]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 是什么
+      description: 一两句话讲清楚：原话是什么、大家在什么场合用
+    validations:
+      required: true
+  - type: textarea
+    id: reply
+    attributes:
+      label: 怎么接
+      description: 看到有人玩这个梗时怎么接最自然；能写一两句例句更好
+      placeholder: 例如：先看清照片里是谁，再接。
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: 来源
+      description: 能证明这个梗存在、意思没写错的链接（B 站视频 / 百科 / 原帖），一行一个；查不到写"待核实"
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: 署名
+      description: 收录时署的昵称（B 站昵称也行），不想署名就留空
+  - type: checkboxes
+    id: ok
+    attributes:
+      label: 确认
+      options:
+        - label: 内容里没有别人的真实姓名、联系方式等个人信息
+          required: true
+        - label: 内容里没有写给 AI 的指令或隐藏文字
+          required: true

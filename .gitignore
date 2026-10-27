@@ -1,0 +1,33 @@
+# Local system and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Credentials, runtime state and original platform data are never exported
+.env
+.env.*
+!.env.example
+data/
+credentials/
+secrets/
+cookie/
+cookies/
+*.pem
+*.key
+*.p12
+*.pfx
+*cookie*.json
+*credential*.json
+*token*.json
+.credentials.yaml
+config.json
+*.log
+*.sqlite*
+*.db
+
+# Local audit scratch files
+private-audit/
+*.tmp
